@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "srinagar-enactment-of-air-landed-operations-of-the-indian-army-which-ensured-vi-.jpg",
+      "idiom" : "iphone",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "iphone",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "iphone",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

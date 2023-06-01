@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "pexels-brakou-abdelghani-1723637.jpg",
+      "idiom" : "iphone",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "pexels-brakou-abdelghani-1723638.jpg",
+      "idiom" : "iphone",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "pexels-brakou-abdelghani-1723639.jpg",
+      "idiom" : "iphone",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

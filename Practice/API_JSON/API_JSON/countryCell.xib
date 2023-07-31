@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="countryCell" rowHeight="70" id="KGk-i7-Jjw" customClass="countryCell" customModule="API_JSON" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Ek-cV-Tk1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BeW-Bi-IAS">
+                                <rect key="frame" x="20" y="10" width="335" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ana-Ed-JXA">
+                                <rect key="frame" x="20" y="36" width="335" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="BeW-Bi-IAS" secondAttribute="trailing" constant="20" id="9VI-Bf-vn0"/>
+                            <constraint firstAttribute="trailing" secondItem="ana-Ed-JXA" secondAttribute="trailing" constant="20" id="FFj-5U-voa"/>
+                            <constraint firstItem="BeW-Bi-IAS" firstAttribute="leading" secondItem="2Ek-cV-Tk1" secondAttribute="leading" constant="20" id="FoL-qc-SBx"/>
+                            <constraint firstItem="BeW-Bi-IAS" firstAttribute="top" secondItem="2Ek-cV-Tk1" secondAttribute="top" constant="10" id="Qbs-8w-RDQ"/>
+                            <constraint firstItem="ana-Ed-JXA" firstAttribute="top" secondItem="BeW-Bi-IAS" secondAttribute="bottom" constant="5" id="Sti-fG-52x"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="ana-Ed-JXA" secondAttribute="bottom" constant="5" id="ZOp-A5-BFT"/>
+                            <constraint firstItem="ana-Ed-JXA" firstAttribute="leading" secondItem="2Ek-cV-Tk1" secondAttribute="leading" constant="20" id="krt-Ce-D2c"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="2Ek-cV-Tk1" secondAttribute="trailing" id="HMT-Fb-Zrl"/>
+                    <constraint firstAttribute="bottom" secondItem="2Ek-cV-Tk1" secondAttribute="bottom" id="KTb-j6-sXe"/>
+                    <constraint firstItem="2Ek-cV-Tk1" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="ZcJ-OR-JsN"/>
+                    <constraint firstItem="2Ek-cV-Tk1" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="hZf-DK-yFK"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="lblCapital" destination="ana-Ed-JXA" id="7xr-Ef-ifS"/>
+                <outlet property="lblCountry" destination="BeW-Bi-IAS" id="Pfu-ED-cK3"/>
+            </connections>
+            <point key="canvasLocation" x="180.43478260869566" y="139.95535714285714"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
